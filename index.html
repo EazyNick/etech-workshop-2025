@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CI/CD 학습 도구</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <!-- 메인 그림 -->
+  <header class="bg-blue-600 text-white text-center py-8 text-2xl font-semibold">
+    메인 그림
+  </header>
+
+  <!-- 메뉴바 -->
+  <nav class="grid grid-cols-4 bg-blue-500 text-white text-center divide-x divide-blue-700">
+    <button onclick="goTo('page1.html')" class="py-4 hover:bg-blue-600">메뉴 1</button>
+    <button onclick="goTo('page2.html')" class="py-4 hover:bg-blue-600">메뉴 2</button>
+    <button onclick="goTo('page3.html')" class="py-4 hover:bg-blue-600">메뉴 3</button>
+    <button onclick="goTo('page4.html')" class="py-4 hover:bg-blue-600">메뉴 4</button>
+  </nav>
+
+  <!-- 콘텐츠 영역 -->
+  <main class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <!-- 왼쪽 영역 -->
+    <div class="md:col-span-1 space-y-4">
+      <div class="bg-blue-500 text-white text-center py-20">그림 2</div>
+      <div class="bg-blue-500 text-white text-center py-20">그림 3</div>
+    </div>
+    <!-- 오른쪽 영역 -->
+    <div class="md:col-span-2">
+      <div class="bg-blue-500 text-white text-center py-44 h-full">그림 1</div>
+    </div>
+  </main>
+
+  <!-- 자바스크립트 함수 -->
+  <script>
+    function goTo(page) {
+      window.location.href = page;
+    }
+  </script>
+</body>
+</html>
